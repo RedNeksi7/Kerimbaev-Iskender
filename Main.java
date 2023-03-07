@@ -8,9 +8,8 @@ public class Main {
         int k=0;
 
         for (double a : mDouble) {
-            x++;
             if (a<0){
-                for (int z=x++;z<mDouble.length;z++){
+                for (int z=x+1;z<mDouble.length;z++){
                     if (mDouble[z]>0){
                         l+=mDouble[z];
                         k++;
