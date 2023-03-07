@@ -1,21 +1,24 @@
+import com.sun.security.jgss.GSSUtil;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(temp_age(20,generateRandomAge()));
-        System.out.println(temp_age(15,generateRandomAge()));
-        System.out.println(temp_age(10,generateRandomAge()));
-        System.out.println(temp_age(5,generateRandomAge()));
-        System.out.println(temp_age(25,generateRandomAge()));
-    }
-    public static String temp_age(int temp, int age){
-        if (age>20&&age<45&&temp>-20&&temp<30||age<20&&temp>0&&temp<28||age>45&&temp>-10&&temp<25){
-            return "Можно идти гулять";
-        }else{
-            return "Оставайтесь дома.";
-        }
+        double[] mDouble = {1.2, -2.1, 3.4, -4.5, 5.6, -6.7, 7.8, -8.9, 9.1, 2.6, 5.2, -6.8, 5.1, 6.2, -8.3};
+        int x = 0;
+        double l=0.0;
+        int k=0;
 
-    }
-    public static int generateRandomAge(){
-        int a = (int) (Math.random()*(30+1));
-        return a;
+        for (double a : mDouble) {
+            x++;
+            if (a<0){
+                for (int z=x++;z<mDouble.length;z++){
+                    if (mDouble[z]>0){
+                        l+=mDouble[z];
+                        k++;
+                    }
+                }
+                break;
+            }
+        }
+        System.out.println(l/k);
     }
 }
