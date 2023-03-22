@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Boss hugoBoss = new Boss();
-        hugoBoss.setBossHealth(500);
-        hugoBoss.setBossDamage(70);
-        hugoBoss.setBossAbility("Berserk");
-        System.out.println("Boss health: " + hugoBoss.getBossHealth() + ", damage: "+ hugoBoss.getBossDamage()
-                + ", ability: " + hugoBoss.getBossAbility());
-        }
+        Medic medic = new Medic();
+        Magic magic = new Magic();
+        Warrior warrior=new Warrior();
+        Hero [] heroes={medic, magic, warrior};
+        for (int i=0; i<heroes.length; i++){
+            System.out.println();
+            }
     }
+}
