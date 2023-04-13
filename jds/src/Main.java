@@ -4,10 +4,12 @@ public class Main {;
         bankAccount.deposit(20000);
         System.out.println(bankAccount.getAmount());
         while (true){
-            bankAccount.withDraw(6000);
-            if (bankAccount.getAmount()<6000){
-                bankAccount.withDraw((int)bankAccount.getAmount());
+            try{
+                bankAccount.withDraw(6000);
+            }catch (ArithmeticException arithmeticException){
+                
             }
+
         }
     }
 }
