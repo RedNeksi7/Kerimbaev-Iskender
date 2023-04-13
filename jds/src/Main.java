@@ -1,5 +1,5 @@
 public class Main {;
-    public static void main(String[] args) throws LimitException {
+    public static void main(String[] args) {
         BankAccount bankAccount=new BankAccount();
         bankAccount.deposit(20000);
         System.out.println(bankAccount.getAmount());
@@ -7,8 +7,11 @@ public class Main {;
             try{
                 bankAccount.withDraw(6000);
             }catch (LimitException limitException){
-                int v = (int) bankAccount.getAmount();
-                bankAccount.withDraw(v);
+                try {
+                    bankAccount.withDraw((int)limitException.getRemainingAmount());
+                } catch (LimitException e) {
+                    throw new RuntimeException(e);
+                }
             }
 
         }
