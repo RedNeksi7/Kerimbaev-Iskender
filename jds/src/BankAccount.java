@@ -9,9 +9,9 @@ public class BankAccount {
         sum+=amount;
         System.out.println("Вы пополнили счет на: " + sum);
     }
-    public void withDraw(int sum) throws IllegalArgumentException{
+    public void withDraw(int sum) throws LimitException{
         if (sum>amount){
-            throw new IllegalArgumentException("Ошибка, сумма больше чем остаток.");
+            throw new LimitException("Ошибка, сумма больше чем остаток: ", amount);
         }else {
             sum-=amount;
         }
