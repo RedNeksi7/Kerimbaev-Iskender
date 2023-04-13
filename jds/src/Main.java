@@ -7,7 +7,8 @@ public class Main {;
             try{
                 bankAccount.withDraw(6000);
             }catch (ArithmeticException arithmeticException){
-                
+                int v = (int) bankAccount.getAmount();
+                bankAccount.withDraw(v);
             }
 
         }
