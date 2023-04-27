@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         }
         isOperation=true;
     }
-    public String numberClick(String num){
+    public void numberClick(String num){
         switch (num){
             case "1":
                 if (textView.getText().toString().equals("0") || isOperation){
@@ -152,6 +152,5 @@ public class MainActivity extends AppCompatActivity {
                     textView.append("9");
                 }
         }
-        return num;
     }
 }
