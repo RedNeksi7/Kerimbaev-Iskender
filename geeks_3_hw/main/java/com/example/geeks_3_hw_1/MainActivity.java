@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private void navigateToSecond(){
         Intent intent=new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("name",name.getText());
-        intent.putExtra("surname",surname.getText());
-        intent.putExtra("age",age.getText());
+        intent.putExtra("name",name.getText().toString());
+        intent.putExtra("surname",surname.getText().toString());
+        intent.putExtra("age",age.getText().toString());
         startActivity(intent);
     }
 
