@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">kerimbaev_hw_2__</string>
+    <string name="user_info">ВАШИ ДАННЫЕ:</string>
+    <string name="user_name">1) ИМЯ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_info">СОХРАНИТЬ ДАННЫЕ</string>
+    <string name="edit_text_name">ИМЯ</string>
+    <string name="edit_tex_second_name">ФАМИЛИЯ</string>
+    <string name="your_info">ВАШИ ДАННЫЕ</string>
+    <string name="your_name">1) ИМЯ</string>
+    <string name="your_secondName">2) ФАМИЛИЯ</string>
+    <string name="your_age">3) ВОЗРАСТ</string>
+    <string name="your_gender">4) ПОЛ</string>
+    <string name="your_study">5) МЕСТО УЧЕБЫ</string>
+    <string name="your_job">6) МЕСТО РАБОТЫ</string>
+    <string name="study">МЕСТО УЧЕБЫ</string>
+    <string name="job">МЕСТО РАБОТЫ</string>
+    <string name="saveInfo">СОХРАНИТЬ ДАННЫЕ</string>
+    <string name="age">ВОЗРАСТ</string>
+    <string name="gender">ПОЛ</string>
+    <string name="save">СОХРАНИТЬ ДАННЫЕ</string>
+</resources>

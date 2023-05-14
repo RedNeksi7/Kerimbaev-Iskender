@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".userInfoFragment">
+
+    <TextView
+        android:id="@+id/userInfoName"
+        android:text="@string/your_info"
+        android:layout_marginTop="130dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:id="@+id/userInfoSecondName"
+        android:text="@string/your_name"
+        android:layout_marginTop="200dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:text="@string/your_secondName"
+        android:layout_marginTop="250dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:id="@+id/userInfoAge"
+        android:text="@string/your_age"
+        android:layout_marginTop="300dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:id="@+id/userInfoGender"
+        android:text="@string/your_gender"
+        android:layout_marginTop="350dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:id="@+id/study"
+        android:text="@string/your_study"
+        android:layout_marginTop="400dp"
+        style="@style/userInfoMain"/>
+
+    <TextView
+        android:id="@+id/job"
+        android:text="@string/your_job"
+        android:layout_marginTop="450dp"
+        style="@style/userInfoMain"/>
+
+</FrameLayout>
