@@ -2,16 +2,14 @@ package com.example.kerimbaev_3__.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.kerimbaev_3__.R;
-
 import java.util.ArrayList;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactViewHolder> {
     ArrayList<String>newArrayList;
+    
     public ContactAdapter(ArrayList<String> arrayList){
         newArrayList=arrayList;
     }
