@@ -2,11 +2,8 @@ package com.example.kerimbaev_3__;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-
 import com.example.kerimbaev_3__.adapter.ContactAdapter;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
