@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HomeWork_18_05_23</string>
+    <string name="name">NAME</string>
+    <string name="title">TITLE</string>
+    <string name="year">YEAR</string>
+    <string name="sum">SUM</string>
+    <string name="memory">MEMORY</string>
+    <string name="sum_">SUM</string>
+    <string name="detailTitle">TITLE</string>
+    <string name="detailYear">YEAR</string>
+    <string name="detailMemory">MEMORY</string>
+    <string name="detailSum">SUM</string>
+</resources>

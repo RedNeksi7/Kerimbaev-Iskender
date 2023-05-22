@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="175dp"
+        android:layout_height="255dp"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:text="@string/name"
+        android:background="@color/red"
+        android:textColor="@color/black"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:text="@string/title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name"
+        android:textColor="@color/white"
+        android:paddingVertical="20dp"
+        android:background="@color/black"
+        android:paddingHorizontal="100dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView_year"
+        android:text="@string/year"
+        android:background="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:paddingHorizontal="101dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:paddingVertical="20dp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/textView_memory"
+        app:layout_constraintTop_toBottomOf="@+id/textView_year"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:text="@string/memory"
+        android:paddingHorizontal="82dp"
+        android:paddingVertical="19dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView_sum"
+        android:layout_width="match_parent"
+        android:text="@string/sum_"
+        android:background="@color/red"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:layout_height="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
