@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_700"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxWidth="400dp"
+        android:maxHeight="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:text="@string/nameDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/detail_description"
+        android:text="@string/descriptionDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/detail_amount"
+        android:text="@string/amountDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/detail_value"
+        android:text="@string/valueDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
