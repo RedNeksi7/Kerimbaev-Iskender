@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/mainMenuHeader"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/burgerlogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/i322"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/burgerlogo"
+            app:layout_constraintTop_toTopOf="@+id/burgerlogo"
+            android:src="@drawable/i718"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_burger_info"
+            app:layout_constraintTop_toBottomOf="@id/burgerlogo"
+            android:fontFamily="@font/regular_sans"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text5"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/burger_craze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ellipse_id"
+            android:src="@drawable/ellipse"
+            app:layout_constraintStart_toEndOf="@+id/text_burger_info"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="@+id/text_burger_info"
+            app:layout_constraintBottom_toBottomOf="@+id/text_burger_info"
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/open"
+            app:layout_constraintStart_toEndOf="@+id/ellipse_id"
+            app:layout_constraintBottom_toBottomOf="@+id/ellipse_id"
+            android:fontFamily="@font/regular_sans"
+            android:textColor="@color/text6"
+            android:textSize="28sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="@+id/ellipse_id"
+            android:text="@string/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/time"
+            app:layout_constraintTop_toBottomOf="@+id/burgerlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/i719"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            android:id="@+id/logo_geolocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingTop="23dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/i720"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/distance"
+            app:layout_constraintStart_toEndOf="@+id/logo_geolocation"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            android:paddingTop="20dp"
+            android:text="@string/_1_5_km_away"
+            android:layout_width="wrap_content"
+            android:paddingStart="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/star"
+            app:layout_constraintTop_toBottomOf="@+id/text_burger_info"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/i721"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/grade"
+            app:layout_constraintStart_toEndOf="@+id/star"
+            app:layout_constraintTop_toTopOf="@+id/star"
+            app:layout_constraintBottom_toBottomOf="@+id/star"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/regular_sans"
+            android:textColor="@color/text3"
+            android:text="@string/_4_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/grade_info"
+            app:layout_constraintTop_toTopOf="@+id/grade"
+            app:layout_constraintBottom_toBottomOf="@+id/grade"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/grade"
+            android:text="@string/_601"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/countryOfFood"
+            app:layout_constraintStart_toEndOf="@+id/grade_info"
+            app:layout_constraintBottom_toBottomOf="@+id/grade_info"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@+id/grade_info"
+            android:fontFamily="@font/regular_sans"
+            android:text="@string/american_burgers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/star"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/star"
+            android:text="@string/dw"
+            android:fontFamily="@font/regular_sans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

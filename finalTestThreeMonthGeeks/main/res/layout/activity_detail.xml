@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainMenuHeader"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nav_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:background="@color/mainMenuHeader"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@+id/back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/regular_sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="50dp"
+            android:text="@string/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/i790"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="50dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/nav_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/search_logo"
+            android:src="@drawable/baseline_search_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/search_product_by_name"
+            app:layout_constraintStart_toEndOf="@+id/search_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/regular_sans"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/logo_food_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/i323"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/i718"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/logo_food_detail"
+            app:layout_constraintTop_toTopOf="@+id/logo_food_detail"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/around_time"
+            app:layout_constraintEnd_toEndOf="@id/logo_food_detail"
+            app:layout_constraintBottom_toBottomOf="@id/logo_food_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/around"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/around"
+                android:fontFamily="@font/regular_sans"
+                android:paddingHorizontal="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingVertical="5dp"
+                app:layout_constraintStart_toStartOf="@+id/minutes"
+                android:layout_marginBottom="20dp"
+                android:background="@color/mainMenuHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/minutes"
+                android:text="@string/_30_minutes"
+                android:paddingVertical="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/around"
+                android:fontFamily="@font/regular_sans"
+                android:background="@color/mainMenuHeader"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/logo_food_detail"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/regular_sans"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/vegetarian_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/star"
+            android:src="@drawable/i721"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/grade_detail"
+            app:layout_constraintStart_toEndOf="@id/star"
+            app:layout_constraintBottom_toBottomOf="@id/star"
+            app:layout_constraintTop_toTopOf="@id/star"
+            android:text="@string/_4_6_"
+            android:textSize="18sp"
+            android:fontFamily="@font/regular_sans"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/countryOfFood"
+            app:layout_constraintStart_toEndOf="@+id/grade_detail"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/grade_detail"
+            app:layout_constraintTop_toTopOf="@+id/grade_detail"
+            android:text="@string/italian_burgers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/delivery"
+            app:layout_constraintTop_toBottomOf="@+id/grade_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/regular_sans"
+            android:layout_marginTop="10dp"
+            android:text="Delivery: FREE•Minimum: $10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/moreInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/regular_sans"
+            android:text="@string/more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/moreInfo"
+            app:layout_constraintEnd_toEndOf="@+id/moreInfo"
+            android:background="@color/black"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="@+id/moreInfo"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
