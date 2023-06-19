@@ -13,4 +13,5 @@
     <string name="name">Name</string>
     <string name="title_tv">Title</string>
     <string name="get_started">Get started!</string>
+    <string name="savebtn">SAVE</string>
 </resources>
