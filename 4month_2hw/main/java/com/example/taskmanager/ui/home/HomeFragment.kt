@@ -51,13 +51,10 @@ class HomeFragment : Fragment() {
         dialogBuilder.setTitle("Подтверждение удаления")
         dialogBuilder.setMessage("Вы уверены, что хотите удалить эту задачу?")
         dialogBuilder.setPositiveButton("Удалить") { dialog, which ->
-            // Удалите задачу из базы данных
             App.db.taskDao().delete(task)
 
-            // Обновите список задач в адаптере
             adapter.removeTask(task)
 
-            // Уведомьте адаптер об изменении данных
             adapter.notifyDataSetChanged()
 
             Toast.makeText(requireContext(), "Задача удалена", Toast.LENGTH_SHORT).show()
