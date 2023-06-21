@@ -37,5 +37,4 @@ class Pref(private val context: Context) {
     fun getImage():String?{
         return pref.getString(SAVE_IMAGE, null)
     }
-
 }

@@ -10,10 +10,15 @@ import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.findNavController
 import com.example.taskmanager.R
 import com.example.taskmanager.databinding.FragmentTaskBinding
+import com.example.taskmanager.ui.App
+import com.example.taskmanager.ui.data.local.Pref
 import com.example.taskmanager.ui.model.Task
 
 class TaskFragment : Fragment() {
     private lateinit var binding: FragmentTaskBinding
+    private val pref: Pref by lazy {
+        Pref(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +40,7 @@ class TaskFragment : Fragment() {
             title=binding.etTitle.text.toString(),
             desc = binding.etDescription.text.toString()
         )
-        setFragmentResult(TASK_REQUEST, bundleOf(TASK_KEY to data))
+        App.db.taskDao().insert(data)
         findNavController().navigateUp()
     }
     companion object{
